@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.pantalla {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.oculta {
+    display: none;
+}
+
+h1 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+p {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.5);
+}
+
+button:hover {
+    background: #ff6b81;
+    transform: scale(1.05);
+}
+
+#pantalla-juego {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+#contador, #puntuacion, #nivel {
+    position: absolute;
+    top: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+#contador {
+    left: 1rem;
+}
+
+#puntuacion {
+    right: 1rem;
+}
+
+#nivel {
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+#juego {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#jugador {
+    width: 50px;
+    height: 50px;
+    background: #ffd700;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.disparo {
+    width: 5px;
+    height: 20px;
+    background: #ff4757;
+    position: absolute;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.8);
+}
+
+.objetivo {
+    width: 40px;
+    height: 40px;
+    background: #2ed573;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(46, 213, 115, 0.8);
+}
+
+#mensaje-final {
+    color: #ffd700;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+} 
